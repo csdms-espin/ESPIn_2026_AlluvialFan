@@ -1,3 +1,5 @@
 
 # ESPIn_2026_AlluvialFan
-An example that demonstrates the growth of an alluvial fan lobe using random-walk. Once created on a flat landscape, we want to add terrain and surface feedbacks
+An example that demonstrates the growth of an alluvial fan lobe using random-walk
+
+This repository was made as part of the 2026 ESPIn short course in Boulder, CO. 
