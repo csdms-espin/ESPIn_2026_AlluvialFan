@@ -29,3 +29,7 @@ Here is a summary of what this code does:
 11. Combine the frames into a GIF
 
 
+The Fire part -
+The wildfire section runs after the alluvial fan is built. It uses Landlab’s SPACE model with two custom classes: ErodibilityStepper, which lets fire-boosted sediment erodibility (K_sed) decay back to baseline over time, and Burner, which places random circular fires on the grid and increases K_sed on burned nodes. Each timestep uplifts the mountain, routes water, erodes and transports sediment, applies fire effects, and records sediment flux at the outlet. It can produce several fires per step using a Poisson distribution and tracks cumulative burns on the grid. Fire is represented only as higher sediment erodibility, not changed hydrology, so the main expected result is increased sediment export after burns compared with an unburned fan.
+
+<img width="876" height="612" alt="image" src="https://github.com/user-attachments/assets/ca3997a3-3e2b-4d84-8a2a-8dbd808376b3" />
